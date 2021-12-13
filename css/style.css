@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../data/fond.png");
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentation {
+    width: 40%;
+}
+
+.presentation h1, .presentation p {
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 0 60px rgb(8, 7, 16);
+}
+
+.presentation p {
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgb(8, 7, 16);
+}
+
+form {
+    height: 90vh;
+    width: 400px;
+    background-color: rgba(180, 180, 180, 0.6);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+
+form input {
+    border: 2px solid;
+    border-color: transparent;
+    transition: all 250ms;
+}
+
+:focus {
+    border-color: rgb(205, 255, 240);
+    transition: all 250ms;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#csbutton {
+    border: none;
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+#csbutton:hover{
+    background-color: #3a8a65;
+    color: white ;
+    transition: all 250ms;
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms;
+}
+
+button:hover{
+    background-color: #3dafa5;
+    color: #ffffff ;
+    transition: all 250ms;
+}
+
+@media (max-width:1025px) {
+    .presentation{
+        display: none;
+        transition: all 250ms;
+    }
+}
