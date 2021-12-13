@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1ère évaluation annuelle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>1ère évaluation annuelle</h1>
+        <h2>(fin août de l'année 1)</h2>
+    </header>
+    <div id="description">
+        <p>La validation du parcours en entreprise de l’élève-ingénieur a lieu une fois par an, en fin d’année, pour
+            chaque
+            semestre de l’année et conformément aux modalités de contrôle des connaissances et compétences de la
+            formation. <br>
+            L’évaluation est réalisée par un jury constitué de membres de l’équipe pédagogique et du tuteur
+            industriel,
+            lors de la
+            journée annuelle de présentation de l’activité en entreprise sur la base :</p>
+
+        <ul>
+            <li>d’une présentation orale de 15mn</li>
+            <li>d’un rapport d’activité</li>
+            <li>des fiches semestrielles d’évaluation de l’activité en entreprise.</li>
+        </ul>
+
+        <p> A l’issue de cette évaluation, la grille de suivi capacitaire en entreprise est complétée et certifiée par
+            le
+            jury de
+            soutenance pour chaque semestre, signée par les tuteurs industriel et pédagogique ainsi que
+            l’élève-ingénieur puis
+            validée par le Directeur des Etudes. Cette validation donne lieu ou non à la délivrance des ECTS de chaque
+            semestre
+            de l’année.</p>
+    </div>
+
+    <div id="warningmessage">
+        <p><b>Attention :</b> Les signatures sur ce site seront sous forme numérique, via une <b>case à cocher.</b></p>
+    </div>
+
+    <form>
+
+        <div class="labelandinput">
+            <label for="date">
+                Date de l'évaluation :</label><br>
+            <input type="date" name="Date" id="date" required><br>
+        </div>
+
+        <div class="labelandinput">
+            <label for="compositionjury">
+                Composition du jury: </label><br>
+            <input type="text" name="Composition" placeholder="Nom et prénom" id="compositionjury" required><br>
+            <input type="text" name="Composition" placeholder="Nom et prénom" id="compositionjury"><br>
+            <input type="text" name="Composition" placeholder="Nom et prénom" id="compositionjury"><br>
+            <input type="text" name="Composition" placeholder="Nom et prénom" id="compositionjury"><br>
+        </div>
+
+
+        <div class="labelandinput">
+            <label for="name">
+                Nom et prénom de l'élève ingénieur :</label><br>
+            <input type="text" name="Nom élève" placeholder="Nom et prénom" id="name" required><br>
+        </div>
+
+        <!--J'ai souhaité ici créer un bouton qui vérifie le formulaire (type submit), mais aussi créer un lien vers la page form.html-->
+        <!--Avec ce qu'on a vu, je n'ai pas réussi. Le bouton fait donc office de lien uniquement.-->
+        <button type="submit" id="nextstep" onclick="window.location.href='form.html'">Passer à l'étape suivante</button>
+    </form>
+    </div>
+
+</body>
+
+</html>
