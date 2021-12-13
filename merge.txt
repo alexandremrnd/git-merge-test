@@ -1,1 +1,4 @@
+<<<<<<< HEAD
 Texte d'exemple pour le TP4 de architecture web!
+texte d'exemple pour le TP4 !
+>>>>>>> main
